@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- UNICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Add favicon -->
+    <link rel="shortcut icon" type="x-icon" href="favicon.ico">
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <title>Portfolio | Shreyash Ghanekar</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">Shreyash Ghanekar</p>
+                <span>.</span>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#experience" class="nav-link">Experience</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button id="btn" class="btn">Download Resume<i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <!-- -------------- MAIN ---------------- -->
+        <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- -->
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>Shreyash Ghanekar</span>
+                    </div>
+                    <div class="featured-name">
+                        <p>I'm a <span class="typedText"></span></p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>B.E. Information Technology student at PICT with 8.91 CGPA and proven experience as a Backend & DevOps Developer. 
+                            Specialized in microservices architecture, cloud technologies, and full-stack development with expertise in React.js, Node.js, and AWS. 
+                            Passionate about building scalable systems and have successfully contributed to real-time applications serving thousands of users.
+                        </p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <button id="btn" class="btn">Download Resume<i class="uil uil-file-alt"></i></button>
+                    </div>
+                    <div class="social_icons">
+                        <a href="https://github.com/ShreyashPG" target="_blank" class="icon"><i
+                                class="uil uil-github-alt"></i></a>
+                        <a href="https://www.linkedin.com/in/shreyash-ghanekar/" target="_blank"
+                            class="icon"><i class="uil uil-linkedin-alt"></i></a>
+                        <a href="https://medium.com/@shreyasghanekar35" target="_blank" class="icon"><i
+                                class="uil uil-medium-m"></i></a>
+                        <a href="https://portfolio-git-main-shreyashpgs-projects.vercel.app" target="_blank" class="icon"><i
+                                class="uil uil-globe"></i></a>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="./profile.jpg" alt="avatar">
+                    </div>
+                </div>
+                <div class="scroll-icon-box">
+                    <a href="#about" class="scroll-btn">
+                        <i class="uil uil-mouse-alt"></i>
+                        <p>Scroll Down</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- -------------- ABOUT BOX ---------------- -->
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <h3>My Introduction</h3>
+                            <p>I'm a B.E. Information Technology student at Pune Institute of Computer Technology with a CGPA of 8.91. 
+                                With professional experience as a Backend & DevOps Intern at Alemeno and Backend Developer Intern at Borgave Group, 
+                                I specialize in building scalable microservices, implementing CI/CD pipelines, and developing full-stack applications. 
+                                I've solved 500+ coding problems and ranked in top positions at multiple coding competitions.
+                            </p>
+                            <div class="about-btn">
+                                <button id="btn" class="btn">Download Resume<i class="uil uil-import"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Programming Languages</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>C++</span>
+                                <span>Java</span>
+                                <span>JavaScript</span>
+                                <span>Python</span>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Frameworks & Technologies</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>React.js</span>
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>Flask</span>
+                                <span>MongoDB</span>
+                                <span>PostgreSQL</span>
+                                <span>Redis</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Cloud & DevOps</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>AWS (EC2, S3, RDS, ECS)</span>
+                                <span>Docker</span>
+                                <span>CI/CD</span>
+                                <span>RabbitMQ</span>
+                                <span>Microservices</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -------------- EXPERIENCE BOX ---------------- -->
+            <section class="section" id="experience">
+                <div class="top-header">
+                    <h1>Professional Experience</h1>
+                </div>
+                <div class="experience-container">
+                    <div class="experience-item">
+                        <h3>Backend & DevOps Intern</h3>
+                        <h4>Alemeno, Thane | Apr 2025 – Aug 2025</h4>
+                        <ul>
+                            <li>Developed real-time defect detection system using Python and Flask</li>
+                            <li>Designed microservices with CI/CD pipelines, handling 10,000+ requests/min</li>
+                            <li>Managed ML model deployment on AWS SageMaker</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Backend Developer Intern</h3>
+                        <h4>Borgave Group, Pune | Jan 2025 – Apr 2025</h4>
+                        <ul>
+                            <li>Built Dockerized Express.js backend for Dairy ERP system</li>
+                            <li>Integrated WebSockets for real-time updates, reducing latency by 200ms</li>
+                            <li>Automated PDF report generation with Cloudinary integration</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Full Stack Developer</h3>
+                        <h4>PICT (In-house) | Apr 2024 – Oct 2024</h4>
+                        <ul>
+                            <li>Developed React.js frontend and Express.js backend for student-teacher portal</li>
+                            <li>Authored 40+ SQL queries, reducing response time by 30%</li>
+                            <li>Maintained portal for 6+ months, serving 300+ students</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -------------- PROJECT BOX ---------------- -->
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Featured Projects</h1>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Resume Builder</h3>
+                        <p><strong>Tech Stack:</strong> React.js, Express.js, MongoDB, Firebase, Redux, RabbitMQ, GenAI</p>
+                        <ul>
+                            <li>Scalable MERN microservice architecture with async PDF generation</li>
+                            <li>OpenAI API integration for automated content generation</li>
+                            <li>Deployed on Vercel, Render, and MongoDB Atlas</li>
+                        </ul>
+                        <a href="https://resume-builder-shreyashpgs-projects.vercel.app/" target="_blank" class="project-link">
+                            <i class="uil uil-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Logging & Alerting System</h3>
+                        <p><strong>Tech Stack:</strong> Python, Flask, MongoDB, Fluentd, Alertmanager, AWS S3</p>
+                        <ul>
+                            <li>Centralized log aggregation with MongoDB analytics</li>
+                            <li>Real-time health monitoring and anomaly detection</li>
+                            <li>AWS S3 integration with automated CI/CD deployment</li>
+                        </ul>
+                        <a href="https://github.com/ShreyashPG/Log_Aggregation_And_Health_Monitoring_System" target="_blank" class="project-link">
+                            <i class="uil uil-github-alt"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="achievements-stats">
+                    <div class="stat-box">
+                        <i class="uil uil-trophy"></i>
+                        <h3>500+</h3>
+                        <label>Problems Solved</label>
+                    </div>
+                    <div class="stat-box">
+                        <i class="uil uil-award"></i>
+                        <h3>2nd Rank</h3>
+                        <label>Algomania 2024</label>
+                    </div>
+                    <div class="stat-box">
+                        <i class="uil uil-download-alt"></i>
+                        <h3>1200+</h3>
+                        <label>NPM Downloads</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -------------- CONTACT BOX ---------------- -->
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Get in Touch</h1>
+                    <span>Let's discuss opportunities and collaborate on exciting projects</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i> Email: shreyasghanekar35@gmail.com</p>
+                            <p><i class="uil uil-graduation-cap"></i> B.E. IT Student at PICT (CGPA: 8.91)</p>
+                            <p><i class="uil uil-map-marker"></i> Pune, Maharashtra</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <div class="form-inputs">
+                                <input type="text" id="name" class="input-field" placeholder="Name">
+                                <input type="email" id="email" class="input-field" placeholder="Email">
+                            </div>
+                            <div class="text-area">
+                                <textarea id="message" placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button id="sendButton" class="btn">Send <i class="uil uil-message"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- --------------- FOOTER --------------- -->
+        <footer>
+            <div class="top-footer">
+                <p>Shreyash Ghanekar</p>
+            </div>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#experience">Experience</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <a href="https://github.com/ShreyashPG" target="_blank" class="icon"><i class="uil uil-github-alt"></i></a>
+                <a href="https://www.linkedin.com/in/shreyash-ghanekar/" target="_blank" class="icon"><i class="uil uil-linkedin-alt"></i></a>
+                <a href="https://medium.com/@shreyasghanekar35" target="_blank" class="icon"><i class="uil uil-medium-m"></i></a>
+                <a href="https://portfolio-git-main-shreyashpgs-projects.vercel.app" target="_blank" class="icon"><i class="uil uil-globe"></i></a>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Shreyash Ghanekar</a> - All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ----- MAIN JS ----- -->
+    <script src="./script.js"></script>
+
+    <script>
+        // Updated typing animation
+        // var typed = new Typed('.typedText', {
+        //     strings: ['Backend Developer', 'DevOps Engineer', 'Full Stack Developer', 'Problem Solver'],
+        //     typeSpeed: 50,
+        //     backSpeed: 50,
+        //     loop: true
+        // });
+         let typed = new Typed(".typedText", {
+    strings: [
+      "Programmer",
+      "Full Stack Developer",
+      "DevOps Engineer",
+      "Backend Developer"
+    ],
+    loop: true,
+    typeSpeed: 50,
+    backSpeed: 50,
+    backDelay: 2000 // 2s pause before backspacing
+  });
+
+        // Resume download functionality
+        var downloadButtons = document.querySelectorAll('#btn');
+        downloadButtons.forEach(function(button) {
+            button.addEventListener('click', function () {
+                var pdfLink = 'Resume.pdf';
+                var downloadLink = document.createElement('a');
+                downloadLink.href = pdfLink;
+                downloadLink.download = 'Shreyash_Ghanekar_Resume.pdf';
+                document.body.appendChild(downloadLink);
+                downloadLink.click();
+                document.body.removeChild(downloadLink);
+            });
+        });
+
+        // EmailJS configuration
+        emailjs.init('vTUKXVhZOHkumDWTA');
+        
+        document.getElementById('sendButton').addEventListener('click', function () {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+                alert('Please fill in all fields');
+                return;
+            }
+
+            var templateParams = {
+                from_name: name,
+                from_email: email,
+                message: message,
+            };
+
+            emailjs.send('service_7ec23pk', 'template_czpqkgr', templateParams)
+                .then(function (response) {
+                    alert('Message sent successfully!');
+                    // Clear form
+                    document.getElementById('name').value = '';
+                    document.getElementById('email').value = '';
+                    document.getElementById('message').value = '';
+                }, function (error) {
+                    alert('Failed to send message: ' + error.text);
+                });
+        });
+    </script>
+</body>
+</html>
