@@ -402,35 +402,36 @@
         });
 
         // EmailJS configuration
-        emailjs.init('vTUKXVhZOHkumDWTA');
-        
-        document.getElementById('sendButton').addEventListener('click', function () {
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var message = document.getElementById('message').value;
+        emailjs.init('jGFt3xy4jWJ3C7KKS');  
 
-            if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
-                alert('Please fill in all fields');
-                return;
-            }
+    document.getElementById('sendButton').addEventListener('click', function () {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
 
-            var templateParams = {
-                from_name: name,
-                from_email: email,
-                message: message,
-            };
+        if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+            alert('Please fill in all fields');
+            return;
+        }
 
-            emailjs.send('service_7ec23pk', 'template_czpqkgr', templateParams)
-                .then(function (response) {
-                    alert('Message sent successfully!');
-                    // Clear form
-                    document.getElementById('name').value = '';
-                    document.getElementById('email').value = '';
-                    document.getElementById('message').value = '';
-                }, function (error) {
-                    alert('Failed to send message: ' + error.text);
-                });
-        });
+        var templateParams = {
+            from_name: name,
+            from_email: email,
+            message: message,
+        };
+
+        // Use your Service ID and Template ID
+        emailjs.send('service_5xo83x9', 'template_w2pui8u', templateParams)
+            .then(function (response) {
+                alert('Message sent successfully!');
+                // Clear form
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
+            }, function (error) {
+                alert('Failed to send message: ' + error.text);
+            });
+    });
     </script>
 </body>
 </html>
